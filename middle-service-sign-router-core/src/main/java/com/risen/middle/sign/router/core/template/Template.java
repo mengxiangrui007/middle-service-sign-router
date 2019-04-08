@@ -1,27 +1,35 @@
-package com.risen.middle.sign.router.core.contract;
+package com.risen.middle.sign.router.core.template;
 
 import java.util.Date;
 
 /**
- * 合同字段
+ * 合同模版
  *
  * @author mengxr
  * @since 1.0
  */
-public interface ContractField {
+public interface Template {
     /**
-     * 获取合同字段名称
+     * 模版名称
      *
      * @return
      */
     String getName();
 
     /**
-     * 获取合同字段类型
+     * 模版编码
      *
      * @return
      */
-    String getType();
+    String getCode();
+
+    /**
+     * 模版描述
+     *
+     * @return
+     */
+    String getDesc();
+
     /**
      * 最后修改时间
      *

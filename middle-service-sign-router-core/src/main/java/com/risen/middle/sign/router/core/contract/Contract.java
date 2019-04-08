@@ -3,32 +3,25 @@ package com.risen.middle.sign.router.core.contract;
 import java.util.Date;
 
 /**
- * 合同模版
+ * 合同
  *
  * @author mengxr
  * @since 1.0
  */
-public interface ContractTemplate {
+public interface Contract {
     /**
-     * 模版名称
+     * 获取合同字段名称
      *
      * @return
      */
     String getName();
 
     /**
-     * 模版编码
+     * 获取合同字段类型
      *
      * @return
      */
-    String getCode();
-
-    /**
-     * 模版描述
-     *
-     * @return
-     */
-    String getDesc();
+    String getType();
 
     /**
      * 最后修改时间
